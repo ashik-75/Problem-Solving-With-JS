@@ -1,10 +1,7 @@
-function updateLight(current) {
-  // 8kyu
-  const lights = ['green', 'yellow', 'red'];
-  let index = lights.indexOf(current);
-
-  let getInd = index === lights.length - 1 ? 0 : index + 1;
-  return lights[getInd];
+function multiTable(num) {
+  return [...Array(10)]
+    .map((_, i) => `${i + 1} * ${num} = ${num * (i + 1)}`)
+    .join('/n');
 }
 
-console.log(updateLight('red'));
+console.log(multiTable(7));
