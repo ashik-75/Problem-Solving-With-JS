@@ -1,7 +1,8 @@
-// resize array
+// replace string in specific value
 
-const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const data =
+  'React is popular framework,this Framework is good for create ui in modern days';
 
-number.length = 5;
+const result = data.replace(/framework/gi, 'Library');
 
-console.log(number);
+console.log(result);
