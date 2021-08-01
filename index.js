@@ -1,13 +1,7 @@
-// flat multidimentional array
+// resize array
 
-const arr = [
-  ['zara', 'alex'],
-  [1, 2, 3],
-  ['zakir', 'sabbir', ['forhad', 'tamim', ['zara', 'sara', 'akib']]],
-];
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// it works 2d array
-console.log(arr.flat());
+number.length = 5;
 
-// it works infinite 2d array
-console.log(arr.flat(Infinity));
+console.log(number);
