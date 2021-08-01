@@ -1,15 +1,13 @@
-// convert anyting to boolean
+// flat multidimentional array
 
-function print(dt) {
-  console.log(Boolean(dt));
-}
+const arr = [
+  ['zara', 'alex'],
+  [1, 2, 3],
+  ['zakir', 'sabbir', ['forhad', 'tamim', ['zara', 'sara', 'akib']]],
+];
 
-print('');
+// it works 2d array
+console.log(arr.flat());
 
-// another way to solve
-
-console.log(!'hello');
-console.log(!!'hello');
-console.log(!!null);
-
-console.log(!!NaN);
+// it works infinite 2d array
+console.log(arr.flat(Infinity));
