@@ -5,3 +5,11 @@ function print(dt) {
 }
 
 print('');
+
+// another way to solve
+
+console.log(!'hello');
+console.log(!!'hello');
+console.log(!!null);
+
+console.log(!!NaN);
