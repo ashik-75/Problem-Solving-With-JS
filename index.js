@@ -1,10 +1,5 @@
-function removeEveryOther(arr) {
-  //your code here
-
-  const newdata = arr.filter((dt, index) => !(index % 2));
-  return newdata;
+function sortByLength(array) {
+  return array.sort((a, b) => a.length - b.length);
 }
 
-console.log(
-  removeEveryOther(['akash', 'shakib', 'zakir', 'musha', 'arif', 'ayon'])
-);
+console.log(sortByLength(['Telescopes', 'Glasses', 'Eyes', 'Monocles']));
