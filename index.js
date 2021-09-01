@@ -1,12 +1,7 @@
-function addBinary(a, b) {
-  let init = a + b;
-  let binary = [];
-  while (init > 0) {
-    binary.push(init % 2);
-    init = Math.floor(init / 2);
-  }
-
-  return binary.reverse().join('');
+function maskify(cc) {
+  return cc;
 }
 
-console.log(addBinary(10, 7));
+console.log(maskify('spotify'));
+
+console.log(['#']  6);
