@@ -1,11 +1,12 @@
-String.prototype.toAlternate = function () {
-  return this.split('')
-    .map((dt) =>
-      dt.toLowerCase() === dt ? dt.toUpperCase() : dt.toLowerCase()
-    )
-    .join('');
-};
+function addBinary(a, b) {
+  let init = a + b;
+  let binary = [];
+  while (init > 0) {
+    binary.push(init % 2);
+    init = Math.floor(init / 2);
+  }
 
-console.log('testFued2343 suEd54'.toAlternate());
+  return binary.reverse().join('');
+}
 
-console.log('1'.toUpperCase());
+console.log(addBinary(10, 7));
