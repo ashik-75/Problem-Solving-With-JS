@@ -1,19 +1,17 @@
-function points(games) {
-  let totalPoint = 0;
-  let data = games.map((dt) => dt.split(':'));
+function towerBuilder(nFloors) {
+  // build here
+  let data = [];
+  for (let i = 0; i < nFloors; i++) {
+    const totalLength = 2 * nFloors - 1;
+    const extra = totalLength - (2 * i + 1);
+    let div = Math.floor(extra / 2);
+    let format = `${' '.repeat(div)}${'*'.repeat(2 * i + 1)}${' '.repeat(div)}`;
+    data.push(format);
+  }
 
-  data.map((dt) => {
-    if (dt[0] > dt[1]) {
-      totalPoint += 3;
-    } else if (dt[0] === dt[1]) {
-      totalPoint += 1;
-    }
-  });
-
-  return totalPoint;
-  // your code here
+  return data;
 }
 
-console.log(
-  points(['1:0', '2:0', '3:0', '4:0', '2:1', '1:3', '1:4', '2:3', '2:4', '3:4'])
-);
+console.log(towerBuilder(6));
+
+console.log('*'.repeat(10));
